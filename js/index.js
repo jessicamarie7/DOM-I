@@ -41,4 +41,41 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+const navig = document.querySelectorAll('nav a');
+const navOne = navig[0];
+navOne.textContent = siteContent['nav']['nav-item-1'];
+const navTwo = navig[1];
+navTwo.textContent = siteContent['nav']['nav-item-2'];
+const navThree = navig[2];
+navThree.textContent = siteContent['nav']['nav-item-3'];
+const navFour = navig[3];
+navFour.textContent = siteContent['nav']['nav-item-4'];
+const navFive = navig[4];
+navFive.textContent = siteContent['nav']['nav-item-5'];
+const navSix = navig[5];
+navSix.textContent = siteContent['nav']['nav-item-6'];
 
+const headerText = document.querySelector("h1");
+headerText.textContent = siteContent['cta']['h1'];
+
+const buttonText = document.querySelector(".cta button");
+buttonText.textContent = siteContent['cta']['button'];
+
+
+const headerImg = document.querySelector(".cta img");
+headerImg.setAttribute('src', siteContent['cta']['img-src']);
+
+const topTitles = document.querySelector(".top-content");
+const titlesFirst = topTitles.childNodes[1];
+const firstH = titlesFirst.nextElementSibling;
+const titlesSecond = topTitles.childNodes[3];
+const secondP = titlesSecond.nextElementSibling;
+
+const bottomTitles = document.querySelector(".bottom-content");
+const titlesThird = bottomTitles.childNodes[1];
+const thirdH = titlesThird.nextElementSibling;
+const titlesFourth = bottomTitles.childNodes[3];
+const fourthP = titlesFourth.nextElementSibling;
+
+
+firstH.textContent = siteContent['main-content']['features-h4'];
